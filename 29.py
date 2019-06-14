@@ -1,12 +1,8 @@
-r11=int(input())
-s1=list(map(int,input().split()))
-f1=[]
-f1.append(sum(s1))
-for i1 in range(0,r11-1):
-  a1=s1[:i1+1]
-  y1=s1[i1+1:]
-  if sum(a1)>sum(y1):
-    f1.append(sum(a1))
-  else:
-    f1.append(sum(y1))
-print(max(f))
+n11=int(input())
+l1=list(map(int,input().split()))
+p1=[]
+for i1 in range(n11-1):
+	for j1 in range(i1,n11):
+		c1=l1[i1:j1+1]
+		p1.append(sum(c1))
+print(max(p1))
